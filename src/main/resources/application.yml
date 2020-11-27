@@ -1,0 +1,17 @@
+debug: false
+server:
+  port: 3010
+
+auth0:
+  # Replace with the API Identifier for your Auth0 API.
+  audience: REPLACE_WITH_YOUR_YOUR_API_NAME
+
+# The following is standard Spring Security OAuth2 configuration.
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # Replace with the domain of your Auth0 tenant.
+          # Note the trailing slash is important!
+          issuer-uri: https://REPLACE_WITH_YOUR_ORG_NAME.eu.auth0.com/
